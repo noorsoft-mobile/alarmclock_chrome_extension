@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "description": "Here will be a description",
   "background": {
-    "scripts": ["background.js"]
+    "page": "background.html"
   },
   "browser_action": {
-    "default_popup": "popup.html",
+    "default_popup": "popup/popup.html",
     "default_icons": {
       "128": "images/u10.png"
     }
@@ -14,6 +14,10 @@
   "icons": {
     "128": "images/u10.png"
   },
-  "permissions": ["declarativeContent", "storage", "alarms"],
+  "web_accessible_resources": [
+    "music/Midnight-chimes-sound-effect.mp3",
+    "music/Twin-bell-alarm-clock-sound.mp3"
+	],
+  "permissions": ["declarativeContent", "alarms", "storage"],
   "manifest_version": 2
 }

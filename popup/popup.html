@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <div class="content">
+      <div class="top-bar">
+        <div class="top-bar-left-side">
+          <img class="top-bar-image" src="../images/u10.png"/>
+          <p class="bold">Alarm</p>
+          <p class="cursive">Options</p>
+        </div>
+        <div class="top-bar-right-side">
+          <p>off now</p>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class='body'>
+        <div class='body-item'>
+          <p>ringtone</p>
+          <select id="fileName">
+            <option selected disabled hidden>Choose file</option>
+            <option value="Midnight-chimes-sound-effect">Midnight-chimes-sound-effect</option>
+            <option value="Twin-bell-alarm-clock-sound">Twin-bell-alarm-clock-sound</option>
+          </select>
+        </div>
+        <div class='body-item'>
+          <p>snooze alarm by</p>
+          <select id="snooze">
+            <option selected disabled hidden>Choose snooze</option>
+            <option value='space'>pressing on space button</option>
+          </select>
+        </div>
+        <div class='body-item'>
+          <p>repeat every</p>
+          <select id="repeat">
+            <option selected disabled hidden>Choose repeat</option>
+            <option value='5'>5 minutes</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <button id="save">Save</button>
+  </body>
+  <script type="module" src="popup.js"></script>
+</html>
