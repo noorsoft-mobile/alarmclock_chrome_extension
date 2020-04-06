@@ -1,9 +1,9 @@
-import SettingsControl from './settingsControl.js'
+import SettingsController from './settingsController.js'
 
 const FunctionSettings = {
-  fileName: SettingsControl.setFilename,
-  repeat: SettingsControl.setRepeat,
-  snooze: SettingsControl.setSnooze,
+  fileName: SettingsController.setFilename,
+  repeat: SettingsController.setRepeat,
+  snooze: SettingsController.setSnooze,
 }
 
 const onChange = name => {
@@ -21,7 +21,7 @@ const repeatStorage = (name, node, value) => {
   return node.dispatchEvent(event)
 }
 
-const onClickSave = () => SettingsControl.onSave()
+const onClickSave = () => SettingsController.onSave()
 
 document.addEventListener(
   'DOMContentLoaded',
@@ -39,7 +39,6 @@ document.addEventListener(
         if (fileName) {
           repeatStorage('fileName', changeFileName, fileName)
         }
-
         if (repeat) {
           repeatStorage('repeat', changeRepeat, repeat)
         }

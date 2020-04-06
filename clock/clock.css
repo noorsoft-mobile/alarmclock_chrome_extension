@@ -1,0 +1,21 @@
+.date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100px;
+}
+
+#date__day {
+  font-size: 72px;
+  margin: 0;
+}
+
+#date__month-year,
+#date__day-week {
+  font-size: 18px;
+  margin: 0;
+}
+
+#date__month-year {
+  font-style: italic;
+}

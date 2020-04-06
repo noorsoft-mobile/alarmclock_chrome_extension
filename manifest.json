@@ -18,6 +18,6 @@
     "music/Midnight-chimes-sound-effect.mp3",
     "music/Twin-bell-alarm-clock-sound.mp3"
 	],
-  "permissions": ["declarativeContent", "alarms", "storage"],
+  "permissions": ["tabs", "declarativeContent", "alarms", "storage", "contextMenus"],
   "manifest_version": 2
 }

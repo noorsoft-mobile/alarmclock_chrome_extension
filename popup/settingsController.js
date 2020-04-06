@@ -1,4 +1,4 @@
-class SettingsControl {
+class SettingsController {
   constructor() {
     this.fileName
     this.snooze
@@ -30,4 +30,4 @@ class SettingsControl {
   }
 }
 
-export default new SettingsControl()
+export default new SettingsController()
